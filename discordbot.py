@@ -26,7 +26,7 @@ async def on_member_update(before,after):
         if before.nick != after.nick:
             try:
                 # ニックネームを"abc"に変更
-                await after.edit(nick="ウーマナイザーうぬぬん")
+                await after.edit(nick="ウーマナイザーうぬ美")
                 print(f"{after.display_name}の名前を変更しました。")
             except Exception as e:
                 print(f"名前の変更に失敗しました: {e}")
