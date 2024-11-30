@@ -18,7 +18,7 @@ async def on_ready():
 @client.event
 async def on_member_update(before,after):
     # 特定のユーザーのIDを指定
-    specific_user_id = 917813767805497395  # 特定のユーザーのIDをここに入力
+    specific_user_id = 932667896776237057  # 特定のユーザーのIDをここに入力
 
     # 変更が特定のユーザーに対して行われたか確認
     if after.id == specific_user_id:
@@ -26,7 +26,7 @@ async def on_member_update(before,after):
         if before.nick != after.nick:
             try:
                 # ニックネームを"abc"に変更
-                await after.edit(nick="ウーマナイザーうぬ美")
+                await after.edit(nick="福山修司")
                 print(f"{after.display_name}の名前を変更しました。")
             except Exception as e:
                 print(f"名前の変更に失敗しました: {e}")
